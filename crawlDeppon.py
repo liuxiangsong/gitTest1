@@ -17,7 +17,7 @@ chrome_options.add_argument("--headless")
 #     print(item.string)
 
 driver = webdriver.Chrome(chrome_options=chrome_options,
-                          executable_path="F:/chromedriver")
+                          executable_path="./chromedriver")
 driver.get("https://www.deppon.com/deptlist/")
 html = driver.page_source
 print(html)
