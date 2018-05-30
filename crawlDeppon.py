@@ -1,6 +1,5 @@
 import urllib.request
 from bs4 import BeautifulSoup
-# import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 chrome_options = Options()
@@ -22,4 +21,3 @@ driver = webdriver.Chrome(chrome_options=chrome_options,
 driver.get("https://www.deppon.com/deptlist/")
 html = driver.page_source
 print(html)
-# driver.find_element_by_link_text(u"新闻").click()
